@@ -1,0 +1,89 @@
+body {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/Background2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #CCCCCC;
+}
+.border{
+    width: auto;
+    background-color: #222222;
+    height: 45px;
+    background-image: url(/Images/border.jpg);
+    background-size: 23%;
+    background-repeat: no-repeat;
+    background-position: -140px;
+}
+.gender{
+    text-align: center;
+    padding: 0 0 10 0;
+}
+.icons{
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    bottom: 0;
+    background-color: #222222;
+    background-image: url(/Images/div.jpg);
+    background-blend-mode: lighten;
+    background-size: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 400px;
+    margin: 200px 400px;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 36px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.input-container .toggle-password {
+    position: absolute;
+    right: 39px;
+    top: 37%;
+    cursor: pointer;
+    color: #555;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #555;
+}
+.input-container input {
+    padding-left: 50px;
+}

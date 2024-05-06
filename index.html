@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat Səhifəsi</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="border">
+</div>
+<div class="container">
+    <h2>Qeydiyyat</h2>
+    <form action="#" method="post">
+        <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" name="username" placeholder="İstifadəçi Adı" required>
+        </div>
+        <div class="input-container">
+            <i class="fas fa-at"></i>
+            <input type="email" id="email" name="email" placeholder="E-poçt" required>
+        </div>
+        <div class="input-container">
+            <i class="fas fa-unlock"></i>
+            <input type="password" id="password" name="password" placeholder="Şifrə" minlength="6" required>
+            <span class="toggle-password"><i class="far fa-eye"></i></span>
+        </div>
+        <div class="gender">
+            <label>Cins:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male"><i class="fas fa-male"></i> Kişi</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female"><i class="fas fa-female"></i> Qadın</label>
+        </div>
+        <input type="submit" value="Təsdiq et">
+    </form>
+    <script>
+        const togglePassword = document.querySelector('.toggle-password');
+        const password = document.getElementById('password');
+    
+        togglePassword.addEventListener('click', function() {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.querySelector('i').classList.toggle('fa-eye-slash');
+        });
+    </script>
+</div>
+<div class="icons"></div>
+</body>
+</html>
